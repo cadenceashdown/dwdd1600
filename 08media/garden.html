@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cadence Ashdown">
+    <meta name="description" content="Learn about Plant Species from around the World">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flower.css">
+    <!-- add google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Plant Species around the World: Recognizing Nature's Beauty</title>
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+           <img src="images/logo.png" alt="logo" width="50" height="52">
+        <span>Plant Species around the World</span>
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html"> North America</a></li>
+            <li><a href="southamerica.html"> South America</a></li>
+            <li><a href="plants.html">Plants</a></li>
+            <li class="active"><a href="garden.html">Gardens</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </nav>
+    <!-- start the main content-->
+    <main>
+        <h1>Find a Garden Near You</h1>
+        <form method="get" class="nearyou" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information </legend>
+                <label>First Name* <input type="text" name="fname" required> </label>
+                <label>Last Name* <input type="text" name="lname" required> </label>
+                <label>Cell Number* <input type="tel" name="phone" required placeholder="987-555-1234"> </label>
+                <label>Email Address* <input type="email" name="email" required placeholder="yourname@gmail.com">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What ages will be attending? Select all that apply</legend>
+                <label><input type="checkbox" name="age" value="toddler"> 0-5 </label>
+                <label><input type="checkbox" name="age" value="kid"> 5-12 </label>
+                <label><input type="checkbox" name="age" value="youth"> 13-17 </label>
+                <label><input type="checkbox" name="age" value="student"> 18-25 </label>
+                <label><input type="checkbox" name="age" value="adult"> 25-60 </label>
+                <label><input type="checkbox" name="age" value="senior"> 5-12 </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What is your price range?</legend>
+                <select name="price">
+                    <option value="none"> Please Select</option>
+                    <option value="option1"> Free</option>
+                    <option value="option2"> $0-$25</option>
+                    <option value="option3"> $25-$50</option>
+                    <option value="option4"> $50-$100</option>
+                    <option value="option4"> $100+</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>What season or seasons are you planning to visit?</legend>
+                <label><input type="checkbox" name="season" value="spring"> Spring </label>
+                <label><input type="checkbox" name="season" value="summer"> Summer </label>
+                <label><input type="checkbox" name="season" value="autumn"> Autumn </label>
+                <label><input type="checkbox" name="season" value="winter"> Winter </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What region are you in or planning to visit?</legend>
+                <label><input type="checkbox" name="region" value="africa"> Africa </label>
+                <label><input type="checkbox" name="region" value="asia"> Asia</label>
+                <label><input type="checkbox" name="region" value="europe"> Europe</label>
+                <label><input type="checkbox" name="region" value="namerica"> North America </label>
+                <label><input type="checkbox" name="region" value="oceania"> Oceania / Australia </label>
+                <label><input type="checkbox" name="region" value="samerica"> South America </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Address </legend>
+                <label>Address* <input type="text" name="address" required> </label>
+            </fieldset>
+
+             <fieldset>
+                <legend>How far are you willing to travel?</legend>
+                <label><input type="radio" name="distance" value="local"> Local (Within 50 miles) </label>
+                <label><input type="radio" name="distance" value="regional"> Regional (50-250 miles) </label>
+                <label><input type="radio" name="distance" value="national"> National (250+ miles / Domestic) </label>
+                <label><input type="radio" name="distance" value="international"> International </label>
+            </fieldset>
+
+            <label>
+                <textarea name="Please specify any plants you are looking for!"></textarea>
+            </label>
+
+
+
+
+
+            <input type="submit" value="Find a Garden Near Me">
+        </form>
+
+
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2026 &bull; Cadence Ashdown &bull; Web Essentials</p>
+
+    </footer>
+
+
+
+</body>
+
+</html>

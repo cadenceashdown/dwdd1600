@@ -1,0 +1,347 @@
+/*different browsers*/
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "PT Serif", sans-serif;
+    margin: 0;
+}
+
+/*header*/
+header {
+    background-color: #E0D253;
+    padding: 2rem 10px;
+    text-align: center;
+}
+
+header span {
+    color: #2A7145;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/*nav*/
+
+/*small screen nav*/
+@media only screen and (max-width: 800px) {
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav a { 
+    display: block;
+    text-align: center;
+    padding: .8rem;
+    color: #253D33;
+    text-decoration: none;
+    border-bottom: solid 2px #fff;
+    background-color: #C78785;
+    font-weight: 700;
+}
+
+nav .active a {
+    background-color: #253D33;
+    color: #E0D253;
+    background-image: linear-gradient(to bottom, #253D33, #2A7145);
+}
+}
+
+/*end small*/
+
+/*large screen nav*/
+@media only screen and (min-width: 801px) {
+
+    nav {
+        background-color: #C78785;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 10px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #253D33;
+        font-weight: 700;
+    }
+
+    nav li.active a {
+        background-color: #253D33;
+        color: #E0D253;
+    }
+
+    nav li a:hover {
+        color: #E0D253;
+    }
+
+}
+
+/*end large*/
+
+/*main*/
+main {
+    padding: 1rem
+}
+
+main h1 {
+    color: #2A7145;
+    margin-left: 1rem;
+}
+
+main h2 {
+    color: #49A360;
+    margin-bottom: .2rem;
+    margin-left: 1rem;
+}
+
+main h3 {
+    color: #49A360;
+    margin-left: 1rem;
+}
+
+main p {
+    margin: 0;
+    color: #333;
+    margin-left: 1rem;
+}
+
+main ol {
+    padding: .5rem 30px;
+    margin-left: 1rem;
+    background-color: #C78785;
+    border-radius: 10px;
+    border: 2px solid #253D33;
+    width: 200px;
+}
+
+main dl dt {
+    color: #253D33;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+
+main dl dd {
+    color: #253D33;
+    font-size: .9rem;
+    margin-left: 1rem;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main ul li {
+    line-height: 105%;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 800;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+}
+
+main address {
+    font-style: normal;
+    background-color: #E0D253;
+    margin-left: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 3px solid #2A7145;
+    width: 750px;
+}
+
+main a {
+    color: #2A7145;
+}
+
+main a:hover {
+    color: #C78785;
+}
+
+/*main image*/
+figure.deer {
+    margin: 0 0 0 20px;
+    width: 40%;
+    float: right;
+}
+
+figure.deer img {
+    width: 100%;
+    height: auto;
+}
+
+figure.deer figcaption {
+    text-align: center;
+    font-size: .75rem;
+    color: #333
+}
+
+/* gallery */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: 1rem;
+    color: #253D33;
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.nearyou fieldset {
+    border: 4px solid #C78785;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.nearyou legend {
+    color: #2A7145;
+    font-size: 1.1rem;
+}
+
+.nearyou label {
+    margin: .5rem;
+}
+
+.nearyou label,
+.nearyou select,
+.nearyou [type=text],
+.nearyou [type=tel],
+.nearyou [type=email],
+.nearyou textarea {
+    display: block;
+}
+
+.nearyou [type=text],
+.nearyou [type=tel],
+.nearyou [type=email],
+.nearyou select,
+.nearyou textarea {
+    border: solid 1px #333;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "PT Serif", sans-serif;
+    font-weight: 200;
+}
+
+.nearyou textarea {
+    height: 6rem;
+    padding: 1rem;
+}
+
+.nearyou :required {
+    background-color: #f5dede;
+}
+
+.nearyou [type=submit] {
+    background-color: #E0D253;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: "PT Serif", sans-serif;
+    color: #2A7145;
+    margin: 1rem 0 0 1vw;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+/* table */
+table.experiences {
+width: 100%;
+border-collapse: collapse;
+}
+
+table.experiences th {
+    background-color: #2A7145;
+    color: white;
+    padding: .6rem 2%;
+    text-align: left;
+}
+
+table.experiences td {
+    color: #253D33;
+    padding: .4rem 2%;
+}
+
+table.experiences tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+table.experiences tr:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+/*footer*/
+
+footer {
+    clear: both;
+}
+
+footer {
+    background-color: #C78785;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #253D33;
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header,
+nav,
+main,
+footer {
+
+    max-width: 64rem;
+    margin: 0 auto;
+}
